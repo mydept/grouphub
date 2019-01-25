@@ -3,9 +3,7 @@ edited from the working dir
 edited from remote repo
 to test cloning
 testing git merge
-<<<<<<< HEAD
 testing assgn of commits in branches -- editing it in dev branch
 testing 2nd commit
 =======
 example of pull request
->>>>>>> d700886024722fd954cdce7b350dabdcf2d4c481
