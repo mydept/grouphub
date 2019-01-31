@@ -1,4 +1,5 @@
-#!/usr/bin/env groovy
+@Library('pipeline-library-demo')
+
 
 def mesg(){
 echo "hello world"
@@ -7,9 +8,10 @@ echo "hello world"
 node('mvn-label') {
    def mvnHome
    
-   stage('message'){
-   mesg
-   }
+stage('Demo') {
+  echo 'Hello World'
+  sayHello 'Dave'
+}
    
    stage('Preparation') { // for display purposes
           git branch: '${branch}', url: 'https://github.com/mydept/grouphub.git'
