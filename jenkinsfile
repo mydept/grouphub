@@ -11,7 +11,7 @@ stage('Demo') {
 
 stage('sharedLib test'){
 sayHello 'edureka'
-release
+release "test"
 }
    
    stage('Preparation') { // for display purposes
