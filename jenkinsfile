@@ -1,5 +1,14 @@
+def mesg(){
+sh 'echo "hello world"'
+}
+
 node('mvn-label') {
    def mvnHome
+   stage('message')
+   {
+   mesg
+   }
+   
    stage('Preparation') { // for display purposes
           git branch: '${branch}', url: 'https://github.com/mydept/grouphub.git'
          mvnHome = tool 'maven-3.6.0'
