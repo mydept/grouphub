@@ -6,8 +6,8 @@ echo "hello world"
 
 node('mvn-label') {
    def mvnHome
-   stage('message')
-   {
+   
+   stage('message'){
    mesg
    }
    
