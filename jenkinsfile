@@ -1,5 +1,5 @@
 def mesg(){
-sh 'echo "hello world"'
+echo "hello world"
 }
 
 node('mvn-label') {
