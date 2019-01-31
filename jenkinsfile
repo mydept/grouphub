@@ -1,10 +1,6 @@
 @Library('pipeline-library-demo')_
 
 
-def mesg(){
-echo "hello world"
-}
-
 node('mvn-label') {
    def mvnHome
    
