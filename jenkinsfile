@@ -8,6 +8,10 @@ stage('Demo') {
   echo 'Hello World'
   sayHello 'Dave'
 }
+
+stage('sharedLib test'){
+sayHello 'edureka'
+}
    
    stage('Preparation') { // for display purposes
           git branch: '${branch}', url: 'https://github.com/mydept/grouphub.git'
